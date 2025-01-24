@@ -72,7 +72,7 @@ else:
 # and set the environment variables. See http://twil.io/secure
 
 
-client = Client(account_sid, auth_token)
+"""client = Client(account_sid, auth_token)
 
 message = client.messages.create(
     body="Join Earth's mightiest heroes. Like Kevin Bacon.",
@@ -80,5 +80,5 @@ message = client.messages.create(
     to="+491724589465",
 )
 
-print(message.body)
+print(message.body)"""
 
