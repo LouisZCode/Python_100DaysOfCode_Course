@@ -5,8 +5,8 @@ from days_before import day_count_date
 from send_stock_messate import send_twilio_message
 
 
-NEWS_API_KEY = '671121ad496547308763249441f565e9'
-STOCK_INFO_API = "RAEJ1JDBDRNWQ7QR"
+NEWS_API_KEY = ''
+STOCK_INFO_API = ""
 #Test at the end! this has a 25 uses limit per day
 
 

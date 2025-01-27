@@ -1,7 +1,9 @@
 from twilio.rest import Client
 
-account_sid = 'AC0cad5764a07ef3c29ee037cb2345d8da'
-auth_token = '08d56e8472177f845e807cf767ea0534'
+#Data deleted so I can push to Github
+
+account_sid = ''
+auth_token = ''
 
 ## STEP 3: Use https://www.twilio.com
 # Send a seperate message with the percentage change and each article's title and description to your phone number. 
@@ -11,8 +13,8 @@ def send_twilio_message(text):
 
     message = client.messages.create(
         body= text,
-        from_="+16204558341",
-        to="+491724589465",
+        from_="",
+        to="",
     )
 
     return message
