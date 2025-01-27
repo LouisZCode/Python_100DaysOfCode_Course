@@ -6,6 +6,9 @@ def day_count_date():
     d_y = d_t - timedelta(days=1)
     d_yy = d_t - timedelta(days=2)
 
+    #How do we jump the weekends? there is no data in those, and they brake the code if it is ran on Monday or Tuesday
+
+
     #how do we adjust so the data doesnt break when changing months,
     # aka, from 1 February, we cannot go -1
     #we use   .strftime('%Y-%m-%d') and timedelta above!

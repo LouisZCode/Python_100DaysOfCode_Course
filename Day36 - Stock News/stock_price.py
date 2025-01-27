@@ -16,6 +16,7 @@ def get_stock_price(day1, day2):
         }
 
     #Stock API Docs: https://www.alphavantage.co/documentation/
+    #https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=PLTR&outputsize=compact&apikey=RAEJ1JDBDRNWQ7QR
 
     response = requests.get(url='https://www.alphavantage.co/query?', params=stock_api_params)
     stock_data = response.json()

@@ -1,25 +1,22 @@
-import requests
-import os
 from twilio.rest import Client
 
-account_sid = os.environ.get("ACC_SID")
-auth_token = os.environ.get("AUTH_TOKEN")
+account_sid = 'AC0cad5764a07ef3c29ee037cb2345d8da'
+auth_token = '08d56e8472177f845e807cf767ea0534'
 
 ## STEP 3: Use https://www.twilio.com
 # Send a seperate message with the percentage change and each article's title and description to your phone number. 
 
-def send_twilio_message():
+def send_twilio_message(text):
     client = Client(account_sid, auth_token)
 
     message = client.messages.create(
-        body="Its going to RAIN oh noooo...",
+        body= text,
         from_="+16204558341",
         to="+491724589465",
     )
 
     return message
 
-send_twilio_message()
 
 #Optional: Format the SMS message like this: 
 """
