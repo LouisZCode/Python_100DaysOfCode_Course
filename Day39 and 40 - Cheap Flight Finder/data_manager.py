@@ -1,9 +1,10 @@
 import requests
 from dotenv import load_dotenv
+import os
+
+SHEETY_ENDPOINT = "https://api.sheety.co/ba7962d361651aea1732c73e02efb6c3/flightDeals/prices"
 
 load_dotenv()
-
-SHEETY_ENDPOINT = 'https://api.sheety.co/ba7962d361651aea1732c73e02efb6c3/flightDeals/prices'
 
 #This data managet class will create objects that interact with Sheety... meaning, I need this:
 #Attibutes that hold all sheety info (urls, endpoints, passwords, etc...)
@@ -19,6 +20,7 @@ class DataManager:
     def get_sheety_data(self):
         response = requests.get(SHEETY_ENDPOINT)
         data = response.json()
+        print(data)
         self.destination_data = data['prices']
         return self.destination_data
     
